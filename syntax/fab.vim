@@ -18,7 +18,7 @@ hi def link	fabValue	Identifier
 " Keywords:
 "
 
-syn keyword	fabType		bool int string struct list file
+syn keyword	fabType		bool int record string list file
 hi def link	fabType		Type
 
 syn keyword	fabBuiltin	action args buildroot files function import srcroot subdir
