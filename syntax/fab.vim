@@ -35,32 +35,35 @@ hi def link	fabConditional	Conditional
 syn keyword	fabRepeat	foreach as
 hi def link	fabRepeat	Repeat
 
+" Operators:
 syn match	fabAdd		'+'
 syn match	fabAnd		'\<and\>'
-syn match	fabAssign	'='
-syn match	fabColon	':'
-syn match	fabInput	'<='
 syn match	fabNot		'\<not\>'
 syn match	fabOr		'\<or\>'
-syn match	fabParen	'[\[\]{}()]'
 syn match	fabPrefix	'::'
-syn match	fabProduces	'=>'
 syn match	fabScalarAdd	'.+'
-syn match	fabSemicolon	';'
 syn match	fabXor		'\<xor\>'
 hi def link	fabAdd		Operator
 hi def link	fabAnd		Operator
-hi def link	fabAssign	Operator
-hi def link	fabColon	Operator
-hi def link	fabInput	Operator
 hi def link	fabNot		Operator
 hi def link	fabOr		Operator
-hi def link	fabParen	Operator
 hi def link	fabPrefix	Operator
-hi def link	fabProduces	Operator
 hi def link	fabScalarAdd	Operator
-hi def link	fabSemicolon	Operator
 hi def link	fabXor		Operator
+
+" Other symbols:
+syn match	fabAssign	'='
+syn match	fabColon	':'
+syn match	fabInput	'<-'
+syn match	fabParen	'[\[\]{}()]'
+syn match	fabProduces	'->'
+syn match	fabSemicolon	';'
+hi def link	fabAssign	Special
+hi def link	fabColon	Special
+hi def link	fabInput	Special
+hi def link	fabParen	Special
+hi def link	fabProduces	Special
+hi def link	fabSemicolon	Special
 
 
 "
