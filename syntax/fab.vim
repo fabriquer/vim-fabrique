@@ -10,8 +10,8 @@ endif
 "
 " Identifiers:
 "
-syn match	fabValue	display '^\<[_a-zA-Z][_a-zA-Z0-9]*\>' nextgroup=fabAssign skipwhite
-hi def link	fabValue	Identifier
+syn match	fabIdentifier	display '\<[_a-zA-Z][_a-zA-Z0-9]*\>' skipwhite
+hi def link	fabIdentifier	Identifier
 
 
 "
