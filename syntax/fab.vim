@@ -39,17 +39,28 @@ hi def link	fabRepeat	Repeat
 " Operators:
 syn match	fabAdd		'+'
 syn match	fabAnd		'\<and\>'
+syn match	fabDivide	'/'
+syn match	fabMultiply	'*'
 syn match	fabNot		'\<not\>'
+syn match	fabNotEquals	'!='
 syn match	fabOr		'\<or\>'
-syn match	fabPrefix	'::'
-syn match	fabScalarAdd	'.+'
+syn match	fabPrefix	'\<::\>'
+syn match	fabPostfix	'\<:::\>'
+syn match	fabQuery	'?'
+syn match	fabSubtract	'-'
 syn match	fabXor		'\<xor\>'
 hi def link	fabAdd		Operator
 hi def link	fabAnd		Operator
+hi def link	fabDivide	Operator
+hi def link	fabMultiply	Operator
 hi def link	fabNot		Operator
+hi def link	fabNotEquals	Operator
 hi def link	fabOr		Operator
 hi def link	fabPrefix	Operator
+hi def link	fabPostfix	Operator
+hi def link	fabQuery	Operator
 hi def link	fabScalarAdd	Operator
+hi def link	fabSubtract	Operator
 hi def link	fabXor		Operator
 
 " Other symbols:
