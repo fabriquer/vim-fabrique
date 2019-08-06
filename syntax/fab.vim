@@ -66,12 +66,16 @@ hi def link	fabXor		Operator
 " Other symbols:
 syn match	fabAssign	'='
 syn match	fabColon	':'
-syn match	fabInput	'<-'
+syn match	fabComma	','
+syn match	fabFieldSep	'\.'
+syn match	fabInput	'\<<-\>'
 syn match	fabParen	'[\[\]{}()]'
-syn match	fabProduces	'->'
+syn match	fabProduces	'\<->\>'
 syn match	fabSemicolon	';'
 hi def link	fabAssign	Special
 hi def link	fabColon	Special
+hi def link	fabComma	Special
+hi def link	fabFieldSep	Special
 hi def link	fabInput	Special
 hi def link	fabParen	Special
 hi def link	fabProduces	Special
