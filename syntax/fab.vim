@@ -106,6 +106,21 @@ hi def link	fabStrVar	Special
 
 
 "
+" Multi-file syntax:
+"
+syn region	fabFileGroup	matchgroup=Special start=/files(/ end=/)/
+
+syn match	fabFilename	"\<[A-Za-z0-9\-_\.]\+\>" contained containedin=fabFileGroup
+hi def link	fabFilename	Constant
+
+syn match	fabBadFile	".*[(#\$].*" contained containedin=fabFileGroup
+hi def link	fabBadFile	Error
+
+syn match	fabFileSpace	"\s\+" contained containedin=fabFileGroup
+hi def link	fabFileSpace	Whitespace
+
+
+"
 " Other literals:
 "
 syn match	fabBool		'\<true\>'
