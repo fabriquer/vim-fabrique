@@ -21,13 +21,14 @@ hi def link	fabValue	Identifier
 syn keyword	fabType		bool int record string list file type
 hi def link	fabType		Type
 
-syn keyword	fabBuiltin	action args buildroot files function import srcroot subdir
+syn keyword	fabBuiltin	action args function import
+syn keyword	fabBuiltin	buildroot srcroot subdir
 hi def link	fabBuiltin	Function
 
 syn keyword	fabInOut	in out
 hi def link	fabInOut	Label
 
-syn keyword	fabKeyword	print return some type
+syn keyword	fabKeyword	print type
 hi def link	fabKeyword	Keyword
 
 syn keyword	fabConditional	if else
