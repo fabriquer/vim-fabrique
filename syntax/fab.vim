@@ -32,7 +32,7 @@ hi def link	fabKeyword	Keyword
 
 syn keyword	fabConditional	if else
 hi def link	fabConditional	Conditional
-syn keyword	fabRepeat	foreach as
+syn keyword	fabRepeat	for
 hi def link	fabRepeat	Repeat
 
 " Operators:
